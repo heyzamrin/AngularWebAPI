@@ -27,11 +27,14 @@ export class SelectAllDetails {
   GetAllDetails(): void {
 
     this.service.getAllWebApiTabs().subscribe({
-      next: (resp: any) => {
+      next: (resp: APIEmployeFirst[]) => {
 
         console.log('API RESPONSE:', resp);
 
         this.Getdata = resp;
+
+        console.log(this.Getdata);
+        
 
       },
 

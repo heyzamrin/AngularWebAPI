@@ -21,8 +21,8 @@ export class MyService {
     return this.http.post(endpoint + 'PostWebAPItab', student);
   }
 
-  getAllWebApiTabs(): Observable<any> {
-    return this.http.get<APIEmployeFirst>(endpoint + 'getwebapitabs');    
+  getAllWebApiTabs(): Observable<APIEmployeFirst[]> {
+    return this.http.get<APIEmployeFirst[]>(endpoint + 'getwebapitabs');
   }
 
   deleteWebApiTab(id: number): Observable<any> {
