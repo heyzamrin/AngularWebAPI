@@ -14,29 +14,28 @@ import { APIEmployeFirst } from '../my-service';
 })
 export class SelectAllDetails {
 
-  
+  Getdata: APIEmployeFirst[] = [];
   constructor(
     public service: MyService,
     private router: Router
-  ) {
-    console.log('COMPONENT CREATED');
-  }
+  ) {}
 
-  
+  ngOnInit(): void {
+    this.GetAllDetails();
+  }
 
   GetAllDetails(): void {
 
-    console.log('GET ALL DETAILS CALLED');
-
     this.service.getAllWebApiTabs().subscribe({
-      next: (resp: any) => {
+      next: (resp: APIEmployeFirst[]) => {
 
         console.log('API RESPONSE:', resp);
 
         this.Getdata = resp;
 
-        console.log('GETDATA:', this.Getdata);
-        console.log('LENGTH:', this.Getdata.length);
+        console.log(this.Getdata);
+        
+
       },
 
       error: (err) => {
@@ -57,10 +56,6 @@ export class SelectAllDetails {
         }
       });
   }
-  ngOnInit(): void {
-    console.log('NG ON INIT');
-    this.GetAllDetails();
-  }
-  Getdata: APIEmployeFirst[] = [];
+  
 
 }

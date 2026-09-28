@@ -12,66 +12,24 @@ export interface APIEmployeFirst {
 const endpoint = 'http://localhost:54540/api/API/';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
-export class MyService {    
-
-  constructor(private http: HttpClient) {
-  }
+export class MyService {
+  constructor(private http: HttpClient) {}
 
   addWebApiTab(student: any): Observable<any> {
     return this.http.post(endpoint + 'PostWebAPItab', student);
   }
 
-//   getAllWebApiTabs(): Observable<any> {
-//   return this.http.get<APIEmployeFirst>(endpoint + 'getwebapitabs');
-// }
-getAllWebApiTabs(): Observable<APIEmployeFirst[]> {
-  return this.http.get<APIEmployeFirst[]>(endpoint + 'getwebapitabs');
+  getAllWebApiTabs(): Observable<APIEmployeFirst[]> {
+    return this.http.get<APIEmployeFirst[]>(endpoint + 'getwebapitabs');
+  }
+
+  deleteWebApiTab(id: number): Observable<any> {
+    return this.http.delete<APIEmployeFirst>(endpoint + 'Deletetab/' + id);
+  }
+
+  getWebApiTabWithId(id: number): Observable<any> {
+    return this.http.get<APIEmployeFirst>(endpoint + 'getDetails_id/' + id);
+  }
 }
-
-deleteWebApiTab(id: number): Observable<any> {
-  return this.http.delete<APIEmployeFirst>(endpoint + 'Deletetab/' + id);
-}
-
-getWebApiTabWithId(id: number): Observable<any> {
-  return this.http.get<APIEmployeFirst>(endpoint + "getDetails_id/" + id);
-}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
