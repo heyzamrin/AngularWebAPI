@@ -1,0 +1,108 @@
+.registration-page {
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 30px;
+box-sizing: border-box;
+background: linear-gradient(135deg, #ffe4ec, #f5e5ff);
+font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+.registration-card {
+width: 430px;
+padding: 38px;
+background: #ffffff;
+border-radius: 25px;
+box-shadow: 0 15px 40px rgba(184, 89, 140, 0.20);
+}
+
+.title-section {
+text-align: center;
+margin-bottom: 30px;
+}
+
+.icon {
+width: 65px;
+height: 65px;
+margin: 0 auto 12px;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 50%;
+background: #ffe0eb;
+font-size: 30px;
+}
+
+.title-section h1 {
+margin: 0;
+color: #a83f72;
+font-size: 28px;
+font-weight: 700;
+}
+
+.title-section p {
+margin-top: 8px;
+color: #8b7180;
+font-size: 14px;
+}
+
+.input-box {
+margin-bottom: 20px;
+}
+
+.input-box label {
+display: block;
+margin-bottom: 8px;
+color: #663b52;
+font-size: 15px;
+font-weight: 600;
+}
+
+.input-box input {
+width: 100%;
+padding: 13px 15px;
+box-sizing: border-box;
+border: 2px solid #f0d5e1;
+border-radius: 12px;
+background: #fffafd;
+color: #4d3541;
+font-size: 15px;
+font-family: "Trebuchet MS", Arial, sans-serif;
+outline: none;
+}
+
+.input-box input:focus {
+border-color: #d66b9b;
+background: #ffffff;
+}
+
+.input-box input::placeholder {
+color: #bca8b2;
+}
+
+.input-box span {
+display: block;
+margin-top: 6px;
+color: #d34f78;
+font-size: 12px;
+}
+
+button {
+width: 100%;
+margin-top: 8px;
+padding: 14px;
+border: none;
+border-radius: 12px;
+background: linear-gradient(90deg, #d85c91, #b85cbd);
+color: white;
+font-size: 16px;
+font-weight: 700;
+font-family: "Trebuchet MS", Arial, sans-serif;
+cursor: pointer;
+box-shadow: 0 6px 15px rgba(190, 82, 139, 0.25);
+}
+
+button:hover {
+background: linear-gradient(90deg, #c94e83, #a94eae);
+}

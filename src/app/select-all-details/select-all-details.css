@@ -1,0 +1,211 @@
+.registration-page {
+
+  min-height: 100vh;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  padding: 30px;
+
+  box-sizing: border-box;
+
+  background: linear-gradient(135deg, #ffe4ec, #f5e5ff);
+
+  font-family: "Trebuchet MS", Arial, sans-serif;
+
+}
+
+.registration-card {
+
+  width: 700px;
+
+  max-width: 100%;
+
+  padding: 38px;
+
+  background: #ffffff;
+
+  border-radius: 25px;
+
+  box-shadow: 0 15px 40px rgba(184, 89, 140, 0.20);
+
+}
+
+.title-section {
+
+  text-align: center;
+
+  margin-bottom: 25px;
+
+}
+
+.icon {
+
+  width: 65px;
+
+  height: 65px;
+
+  margin: 0 auto 12px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  border-radius: 50%;
+
+  background: #ffe0eb;
+
+  font-size: 30px;
+
+}
+
+.title-section h1 {
+
+  margin: 0;
+
+  color: #a83f72;
+
+  font-size: 28px;
+
+  font-weight: 700;
+
+}
+
+.delete-link {
+
+  color: #a83f72;
+
+  text-decoration: underline;
+
+  cursor: pointer;
+
+  font-weight: 600;
+
+}
+
+.details-link {
+
+  color: #b85cbd;
+
+  text-decoration: underline;
+
+  cursor: pointer;
+
+  font-weight: 600;
+
+}
+
+.title-section p {
+
+  margin-top: 8px;
+
+  color: #8b7180;
+
+  font-size: 14px;
+
+}
+
+.insert-button {
+
+  width: 100%;
+
+  margin-top: 5px;
+
+  margin-bottom: 25px;
+
+  padding: 14px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  background: linear-gradient(90deg, #d85c91, #b85cbd);
+
+  color: white;
+
+  font-size: 16px;
+
+  font-weight: 700;
+
+  font-family: "Trebuchet MS", Arial, sans-serif;
+
+  cursor: pointer;
+
+  box-shadow: 0 6px 15px rgba(190, 82, 139, 0.25);
+
+}
+
+.insert-button:hover {
+
+  background: linear-gradient(90deg, #c94e83, #a94eae);
+
+}
+
+.table-container {
+
+  width: 100%;
+
+  overflow-x: auto;
+
+}
+
+table {
+
+  width: 100%;
+
+  border-collapse: collapse;
+
+  overflow: hidden;
+
+  border-radius: 12px;
+
+}
+
+thead {
+
+  background: linear-gradient(90deg, #d85c91, #b85cbd);
+
+  color: white;
+
+}
+
+th {
+
+  padding: 14px 12px;
+
+  font-size: 15px;
+
+  font-weight: 700;
+
+}
+
+td {
+
+  padding: 14px 12px;
+
+  text-align: center;
+
+  color: #663b52;
+
+  font-size: 14px;
+
+  border-bottom: 1px solid #f0d5e1;
+
+}
+
+tbody tr:hover {
+
+  background: #fff5fa;
+
+}
+
+tbody tr:last-child td {
+
+  border-bottom: none;
+
+}

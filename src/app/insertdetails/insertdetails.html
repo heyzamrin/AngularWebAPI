@@ -1,0 +1,72 @@
+<div class="registration-page">
+
+  <div class="registration-card">
+
+
+<div class="title-section">
+  <div class="icon">🎓</div>
+  <h1>Student Registration</h1>
+  <p>Fill in the details to register a student</p>
+</div>
+
+<form>
+
+  <div class="input-box">
+    <label>Student Name</label>
+    <input type="text"
+           name="uname"
+           [(ngModel)]="studentData.Name"
+           required
+           #uname="ngModel"
+           placeholder="Enter student name">
+
+    <span *ngIf="uname.invalid && uname.touched">
+      Name is required
+    </span>
+  </div>
+
+
+  <div class="input-box">
+    <label>Age</label>
+    <input type="number"
+           name="age"
+           [(ngModel)]="studentData.Age"
+           required
+           min="18"
+           max="80"
+           #age="ngModel"
+           placeholder="Enter age">
+
+    <span *ngIf="age.invalid && age.touched">
+      Enter age between 18 and 80
+    </span>
+  </div>
+
+
+  <div class="input-box">
+    <label>Mark</label>
+    <input type="number"
+           name="mark"
+           [(ngModel)]="studentData.mark"
+           required
+           min="0"
+           max="100"
+           #mark="ngModel"
+           placeholder="Enter mark">
+
+    <span *ngIf="mark.invalid && mark.touched">
+      Enter mark between 0 and 100
+    </span>
+  </div>
+
+
+  <button type="submit" (click)="addstudentdata()">
+    Register Student
+  </button>
+
+</form>
+
+
+  </div>
+
+</div>
