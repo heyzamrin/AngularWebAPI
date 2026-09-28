@@ -1,20 +1,14 @@
 <div class="registration-page">
-
   <div class="registration-card">
-
     <div class="title-section">
       <div class="icon">🎓</div>
       <h1>All Student Details</h1>
       <p>View all registered student details</p>
     </div>
 
-    <button class="insert-button" routerLink="/ins">
-      + Insert Details
-    </button>
+    <button class="insert-button" routerLink="/ins">+ Insert Details</button>
     <div class="table-container">
-
       <table>
-
         <thead>
           <tr>
             <th>Name</th>
@@ -25,26 +19,17 @@
           </tr>
         </thead>
         <tbody>
-  <tr *ngFor="let p of Getdata">
-    <td>{{ p.Name }}</td>
-    <td>{{ p.Age }}</td>
-    <td>{{ p.Mark }}</td>
-    <td>{{ p.Id }}</td>
-    <td>TEST</td>
-    <td>TEST</td>
-    <td>TEST</td>
-    <td>TEST</td>
-    <td>TEST</td>
-    <td>TEST</td>
-  </tr>
-</tbody>
-<h2 style="color: red;">
-  Records: {{ Getdata.length }}
-</h2>
+          @for (p of Getdata; track p.Id) {
+            <tr>
+              <td>{{ p.Name }}</td>
+              <td>{{ p.Age }}</td>
+              <td>{{ p.Mark }}</td>
+              <td>{{ p.Id }}</td>
+            </tr>
+          }
+        </tbody>
+        <h2 style="color: red">Records: {{ Getdata.length }}</h2>
       </table>
-
-    </div>                 
-
+    </div>
   </div>
-
 </div>
